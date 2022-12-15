@@ -1,0 +1,371 @@
+﻿Si solo estuvieras interesado en trabajar aplicaciones web tienes muchos frameworks y librerías construidas en JavaScript que te van a ayudar a hacer proyectos de forma mucho mas rápida, eficiente y robusta (Angular, View, React,entre otros)
+
+
+Si no quieres trabajar solo en aplicaciones Web puedes utilizar JavaScript con un framework que se llama React Native para poder construir aplicaciones nativas como Android y IOS.
+
+
+Puedes construir aplicaciones de escritorio con JavaScript, usando un framework llamado Electron, pueden correr en Mac o Windows.
+
+
+También puedes trabajar en la parte del Back-end o **IOT **(Internet Od Things) es un concepto que se refiere a una interconexion digital de objetos cotidianos con Internet. Esto con un Framework llamado NodeJS, el cual es un entorno de ejecución de JavaScript que corre directamente en el Back-end.
+
+
+  
+
+
+
+VARIABLES
+// Declarar
+var edad; 
+ // Inicializar
+edad = 30;
+// Declarar e inicializar
+var nombre = "Diego";
+
+
+// ARRAY
+var elementos = ['Computadora', 'Celular']; 
+
+
+ // OBJETOS
+var persona = {  
+    nombre: "Diego",
+    edad: 30
+}
+
+
+
+
+FUNCIONES
+ // function declaration Declarativas expresión
+function miFuncion() { 
+    return 3; 
+}
+
+
+// mandamos llamar la funcion
+miFuncion(); 
+
+
+ // function Expression (también conocidas como funciones anónimas)
+var miFuncion = function(a,b) { 
+    return a + b;
+}
+
+
+// mandamos llamar la variable como funcion
+miFuncion(); 
+
+
+SCOPE
+Global
+Local → Dentro de la función.  Desde una función se puede acceder al scope global.
+
+
+HOISTING
+¿Qué es el hoisting?. En JavaScript, las declaraciones (por… | by Ana Martínez Aguilar | Medium
+Hoisting - Glosario | MDN (mozilla.org)
+
+COERCIÓN
+Coerción es la forma en la que podemos cambiar un tipo de valor a otro, existen dos tipos de coerción:
+Coerción implícita = es cuando el lenguaje nos ayuda a cambiar el tipo de valor.
+Coerción explicita = es cuando obligamos a que cambie el tipo de valor.
+
+
+TRUTHY & FALSY
+//Ejemplos en los que Boolean devuelve Falso:
+Boolean(0); //false
+Boolean(null); //false
+Boolean(NaN); //false
+Boolean(undefined); //false
+Boolean(false); //false
+Boolean(""); //false
+
+
+//Ejemplos en los que Boolean devuelve verdadero:
+Boolean(1); //true para 1 o cualquier número diferente de cero (0)
+Boolean("a"); //true para cualquier caracter o espacio en blanco en el string
+Boolean([]); //true aunque el array esté vacío
+Boolean({}); //true aunque el objeto esté vacío
+Boolean(function(){}); //Cualquier función es verdadera también
+
+
+OPERADORES
+Operador de asignacion
+Simbolo        Descripcion
+=        operador de asignacion
+
+
+Operadores de comparacion
+Simbolo        Descripcion
+==        igual que
+===        estrictamente igual que
+> or >= or >==        mayor o mayor igual que
+< or <= or <==        menor o menor igual que
+!= or !==        diferente que
+
+
+Operadores aritmeticos
+Simbolo        Descripcion
++        operador suma este se utiliza para concatener dos cadenas de texto.
+-        operador resta
+*        operador de multicacion
+/        operador de division
+%        operador de modulo
+**        operador de potenciacion
+tambien se les conoce como operadores binarios. por que toman dos valores y generan un resultado.
+
+
+Operadores logicos
+Simbolo        Descripcion
+!        NOT niega un valor
+&&        AND
+||        OR
+
+
+Operadores incrementales
+Var =+n                Incrementa variable, como n lo indique
+Var++                Incrementa variable en 1
+
+
+CONDICIONALES IF. ELSE, IF ELSE
+var edad = 18; 
+var accion;  
+
+
+if(edad === 18) {
+    accion = 'Puede votar, será su 1ra votación'
+} else if(edad > 18) { 
+    accion = 'Puede votar'
+} else { // call back 
+    accion = 'Aun no puede votar'
+}
+
+
+console.log(accion);
+
+
+// Operador ternario 
+
+
+var numero = 1; 
+var resultado; 
+
+
+if(numero === 1) {
+    resultado = 'Sí son un 1'; 
+} else {
+    resultado = 'No soy un 1'; 
+}
+
+
+condition ? true : false; 
+
+
+var numero = 1; 
+var resultado = numero === 1 ? 'Sí son un 1' : 'No soy un 1';
+
+
+console.log(resultado);
+
+
+CONDICIONAL SWITCH
+// Switch es una forma diferente de validar, está depende del caso que sea verdad. 
+
+
+var numero = 1; 
+var resultado; 
+
+
+/* Switch compara con un === por esa razón los elementos tiene que ser idénticos */ 
+
+
+switch (numero) {
+    case 1: 
+        resultado = "Sí es uno";
+        break;
+    case 10: 
+        resultado = "Sí es diez";
+        break;
+    case 100:
+        resultado = "Sí es cien";
+        break;
+    default:   
+        resultado = "No match"; 
+}
+
+
+console.log(resultado);
+
+
+ARRAYS
+Un Array es un tipo de estructura de datos, objeto. Puede guardar datos distintos dentro, guarda los datos en forma de lista.
+.lenght devuelve la longitud del array.
+.push() agrega elementos al final de array.
+.pop() elimina un elemento del array.
+.unshift() agrega un elemento al array, pero lo agrega en primer lugar.
+**.shift() **elimina el elemento que está en el inicio del array.
+**.indexOf ** devuelve la posición de un elemento del array.
+
+
+var frutas = []; // Array Literal Syntax 
+
+
+var frutas = ["Manzana", "Platano", "Cereza", "Fresa"]; 
+console.log(frutas); 
+console.log(frutas.length); // length es una propiedad del array
+
+
+// Acceder (por índice) a un elemento del Array
+console.log(frutas[0]);   // Los arrays iician en "0"
+
+
+LOOPS: For y For...of
+Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite diferentes tipos de bucles:
+
+
+for - recorre un bloque de código varias veces
+
+
+for/in - recorre las propiedades de un objeto
+
+
+for/of - recorre los valores de un objeto iterable
+
+
+while - recorre un bloque de código mientras se cumple una condición específica
+
+
+do/while - también recorre un bloque de código mientras se cumple una condición específica
+
+
+// Los loops (bucles), son manera rápida y sencilla de hacer algo (una tarea) repetidamente.
+
+
+var estudiantes = [ 'Maria', 'Sergio', 'Rosa', 'Daniel' ]; 
+
+
+function saludarEstudiante(estudiante) {
+    console.log(`Hola, ${estudiante}`);
+}
+
+
+for (var i = 0; i < estudiantes.length; i++) {
+    saludarEstudiante(estudiantes[i]);
+}
+
+
+for (var estudiante of estudiantes) {
+    saludarEstudiante(estudiante);
+}
+
+
+while (estudiantes.length > 0) {   // Aquí la tarea se hará siempre y cuando sea true, cuando llegué a false, dejará de hacer la tarea
+    var estudiante = estudiantes.shift();  // shift() es un método que saca un elemento del array de la posición 0 a la última, Pop() comienza de la última a la primera.
+    saludarEstudiante(estudiante);
+}
+
+
+OBJETOS
+
+Objetos: JS es un lenguaje que está diseñado en un paradigma de objetos.
+Palabra clave: Valor,
+
+
+Ejemplo de Objeto:
+
+
+var miAuto = {
+marca: "Toyota",
+modelo: "Corolla",
+año: 2020
+}
+Acceder a una propiedad del objeto:
+
+
+miAuto.marca 
+// "Toyota"
+Se pueden agregar propiedades que van a ser una función, se les llama métodos de objetos.
+
+
+var miAuto = {
+marca: "Toyota",
+modelo: "Corolla",
+año: 2020, 
+detallesDelAuto: function () {
+        console.log(`Auto ${this.modelo} ${this.año}`);
+}
+
+
+// miAuto.detallesDelAuto();
+//Auto Corolla 2020
+
+
+OBJETOS: Función Constructora
+function auto (MARCA, MODELO, ANNIO){
+  this.marca = MARCA;
+  this.modelo = MODELO;
+  this.annio = ANNIO;
+}
+var autos = [];
+for(let i = 0 ; i < 30 ; i++){
+  var marca = prompt("Ingresa la marca del auto");
+  var modelo = prompt("Ingresa el modelo del auto");
+  var annio = prompt("Ingresa el año del auto");
+  autos.push(new auto (marca, modelo, annio));
+}
+
+
+for(let i = 0 ; i < autos.length ; i++){
+  console.log(autos[i]);
+}
+
+
+Métodos de recorridos de Arrays
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+.filter : nos permite filtrar solo los elementos que deseamos (según ciertos criterios) y devolverlos en un nuevo array.
+.map : crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos.
+
+
+El método find () devuelve el primer valor que coincide de la colección. Una vez que coincida con el valor en los resultados, no verificará los valores restantes en la colección de matriz.
+
+
+El método filter () devuelve los valores coincidentes en una matriz de la colección. Verificará todos los valores de la colección y devolverá los valores coincidentes en una matriz.
+
+
+find() : Devuelve el primer elemento del array que cumpla con la condición dada
+foreach() : Ejecuta lo que le definamos una vez por cada elemento de nuestro array
+some() : Comprueba si al menos un elemento del array cumple con la condición que le damos
+
+
+[■,■,■,■].map(■→●) ⇒ [●,●,●,●]
+[■,●,■,▲].filter(■→true) ⇒ [■,■]
+[■,●,■,▲].find(●→true) ⇒ ●
+[■,●,■,▲].findIndex(●→true) ⇒ 1
+[■,●,■,▲].fill(●) ⇒ [●,●,●,●]
+[■,●,■,▲].some(●→true) ⇒ true
+[■,●,■,▲].every(●→true) ⇒ false
+
+
+________________
+
+
+COURSERA
+
+Outputs en JS
+alert("Hello World");
+
+
+prompt("Hello World?: ");
+
+
+document.write("Hello World");
+
+
+element.innerHTML = “Hello World”;
+document.getElementById('test').innerHTML = "Hello World";
+
+
+console.log()
