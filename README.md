@@ -22,6 +22,7 @@
 1. Curso Básico de PHP: Instalación, Fundamentos y Operadores
 2. Curso fundamentos de Python
 3. Curso de Python: Comprehensions, funciones y manejo de errores
+4. Curso de Python: PIP y entornos virtuales
 
 ### Ciencia de datos
 
