@@ -1,0 +1,61 @@
+﻿1. Instalación de VSC
+2. Instalación de extensiones recomendadas
+   1. Prettier
+   2. Live server
+   3. Path intellisense
+   4. Material icon theme
+   5. Color highlight
+   6. Bracket pair colorizer
+   7. Auto rename tag
+3. Configuración de WSL en Windows (Windows Subsystem for Linux (WSL))
+   1. Instala UBUNTO por defecto
+   2. Crear un usuario y contraseña: idoiarp / Akira.21
+   3. Setup Windows Terminal
+   4. Set up VS Code para editar y debugging
+   5. Set up version control management con Git
+
+
+________________
+
+
+COMANDOS UBUNTU
+
+
+Actualizar paquetes
+sudo apt-get update
+sudo apt-get upgrade
+
+
+Para instalar la última versión de node y npm
+sudo apt-get install -y nodejs
+sudo apt-get install npm
+sudo apt-get update
+sudo npm install -g n
+sudo n latest
+npm -v
+node -v
+
+
+npx = descarga un paquete y borra el instaladornpm = descarga el paquete, lo instala y conserva el instalador
+
+
+npm start
+
+
+Enlazar Ubuntu a Github
+ssh-keygen -t rsa -b 4096 -C "email de github"
+
+
+Evaluar si hay un agente corriendo
+eval "$(ssh-agent -s)"
+ssh-copy-id [email]
+cd ~/.ssh 
+cat id_rsa.pub
+
+
+COMANDOS GIT
+git init
+git add .
+git commit -m "message"
+git remote add origin url
+git push -u origin main
